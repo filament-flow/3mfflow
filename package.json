@@ -1,0 +1,31 @@
+{
+  "name": "3mfflow-client",
+  "version": "1.0.0",
+  "description": "3MF Flow – überwacht einen Ordner auf neue 3MF-Dateien und lädt sie automatisch zu FilamentFlow hoch.",
+  "main": "index.js",
+  "bin": "index.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "build:win": "pkg . -t node18-win-x64 -o dist/3mfflow-win.exe",
+    "build:mac": "pkg . -t node18-macos-x64 -o dist/3mfflow-mac",
+    "build:linux": "pkg . -t node18-linux-x64 -o dist/3mfflow-linux",
+    "build:all": "npm run build:win && npm run build:mac && npm run build:linux"
+  },
+  "dependencies": {
+    "chokidar": "^3.6.0"
+  },
+  "devDependencies": {
+    "@yao-pkg/pkg": "^5.16.0"
+  },
+  "pkg": {
+    "assets": [],
+    "targets": [
+      "node18-win-x64",
+      "node18-macos-x64",
+      "node18-linux-x64"
+    ]
+  }
+}

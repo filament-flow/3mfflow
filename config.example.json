@@ -1,0 +1,8 @@
+{
+  "apiBaseUrl": "https://filament-flow.com",
+  "apiKey": "HIER-DEINEN-3MF-FLOW-API-KEY-AUS-DEN-EINSTELLUNGEN-EINTRAGEN",
+  "watchFolder": "C:\\Users\\DEINNAME\\Desktop\\3MF-Export",
+  "stabilityWaitMs": 2000,
+  "maxRetries": 5,
+  "retryBackoffMs": 5000
+}
